@@ -3,16 +3,20 @@
 This widget shows your current mybigpoint LK.
  
 ## Widget Design and Functionality
-<img src="./img/widget.jpg" align="left" width="170" height="170">
+
+<img src="./img/widget.jpg" align="left" width="160" height="160">
 The widget shows your name and the year you were born in at the top. At the bottom your current mybigpoint LK is displayed.
 
 The data is received from the following web page: [WTB-Tennis](https://www.wtb-tennis.de/spielbetrieb/vereine.html). Therefore you must be a member of a club listed there. This is also the page where you can find your club's ID, which is a required configuration parameter. In addition, you need to know your own ID-Number. See [Setup](https://github.com/jkling2/mybigpoint-lk#setup) for further information on how to specify these configuration parameter.
 
+
 ## Requirements
+
 * Apple Device with iOS 14.
 * Scriptable latest (https://scriptable.app/).
 
 ## Setup
+
 1. Copy the source code for ```mybigpoint-lk.js``` ("raw").
 2. Open Scriptable.
 3. Select "+" and insert the copy of the script.
