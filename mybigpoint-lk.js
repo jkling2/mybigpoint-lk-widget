@@ -6,7 +6,7 @@ let personalID = args.widgetParameter != null && args.widgetParameter.split(',')
 let clubID = args.widgetParameter != null && args.widgetParameter.split(',').length > 1 ? args.widgetParameter.split(',')[1] : "20206";
 let url = `https://www.wtb-tennis.de/spielbetrieb/vereine/verein/spieler/v/${clubID}.html`;
 let currMonth = new Date().getMonth();
-let version = (currMonth > 3 && currMonth < 10) ? "2.0" : "3.0";
+let version = "1.0"; //(currMonth > 4 && currMonth < 10) ? "2.0" : "3.0";
 
 const fm = FileManager.iCloud();
 const dir = fm.joinPath(fm.documentsDirectory(), "mybigpoint-lk");
@@ -16,7 +16,7 @@ if(!fm.fileExists(dir)){
 }
 // load logo from file (if not present, download first)
 if (!fm.fileExists(backgroundImgPath)) {
-	let reqImg = new Request(`https://spieler.tennis.de/documents/20126/36233/PRIVATE_PROFILE_BG.jpg/ea22e842-8ab8-d491-e2c6-1751db01570a?version=${version}`);
+	let reqImg = new Request(`https://spieler.tennis.de/documents/20126/36233/PRIVATE_PROFILE_BG.jpg/62124094-24e5-ab46-b0f6-fd85e69f404c?version=${version}`);
 	reqImg.headers = {
 			"Accept": "image/webp,*/*"
 		};
@@ -30,8 +30,8 @@ await webview.loadURL(url);
 
 var getData = `
   function getData(){
-			a = []
-            x = document.getElementsByTagName("td");
+		   a = []
+	        x = document.getElementsByTagName("td");
             for(s of x){
                 a.push(s.innerText)
             }
