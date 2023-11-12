@@ -16,7 +16,7 @@ if(!fm.fileExists(dir)){
 }
 // load logo from file (if not present, download first)
 if (!fm.fileExists(backgroundImgPath)) {
-	let reqImg = new Request(`https://spieler.tennis.de/documents/20126/36233/PRIVATE_PROFILE_BG.jpg/62124094-24e5-ab46-b0f6-fd85e69f404c?version=${version}`);
+	let reqImg = new Request(`https://spieler.tennis.de/documents/20126/36233/PRIVATE_PROFILE_BG.jpg/85080434-8030-ce9b-57a0-4db78e198890?version=${version}`);
 	reqImg.headers = {
 			"Accept": "image/webp,*/*"
 		};
